@@ -17,3 +17,148 @@ ul,li {
     width: 1140px;
     margin: 0 auto;
 }
+.flex {
+    display: flex;
+}
+
+
+/* Header  Part Css */
+#header {
+    background-color: #FF900E1A;
+}
+    
+/* Navbar Part Css */
+#navbar {
+    padding: 50px 0px;
+}
+.logo {
+    width: 50%;
+}
+.logo span {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.navLink {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navLink ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+    margin-right: 30px;
+    padding-bottom: 8px;
+    position: relative;
+    transition: all linear 0.2s;
+}
+.navLink ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 0px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #FF900E;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+.navLink ul li a:hover {
+    color: #FF900E;
+}
+.navLink ul li a:hover::after {
+    width: 100%;
+    visibility: visible;
+}
+.navLink ul button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+    padding: 15px 25px;
+    border: 2px solid #FF900E;
+    border-radius: 5px;
+    background: transparent;
+    transition: all linear 0.1s; 
+}
+.navLink ul button:hover {
+    color: #fff;
+    background-color: #FF900E;
+}
+
+
+
+/* Small Device */
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 576px;
+    }
+    #navbar {
+        padding: 20px 0px;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .logo span {
+        font-size: 25px;
+        font-weight: 700;
+        color: #131313;
+    }
+    .navLink {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .navLink ul li a {
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+    .navLink ul button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+
+/* Medium Device */
+@media only screen and (min-width: 576px) and (max-width: 768px)  {
+    .container {
+        width: 768px;
+    }
+    .container {
+        width: 576px;
+    }
+    #navbar {
+        padding: 20px 0px;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .logo span {
+        font-size: 25px;
+        font-weight: 700;
+        color: #131313;
+    }
+    .navLink {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .navLink ul li a {
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+    .navLink ul button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
