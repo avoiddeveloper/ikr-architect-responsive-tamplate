@@ -115,11 +115,66 @@ img {
     font-weight: 500;
     color: #fff;
     background-color: #FF900E;
+    border-radius: 5px;
     padding: 20px 25px;
 }
 .hero_content img {
     margin-top: 40px;
 }
+
+
+
+/* Features CSS */
+#main {
+    padding-top: 85px;
+}
+#features {
+    padding-bottom: 110px;
+}
+.features_content {
+    gap: 50px;
+    align-items: center;
+}
+.features_img {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.features_text {
+    width: 50%;
+}
+.one {
+    color: #727272;
+    font-weight: 500;
+}
+.two {
+    color: #131313;
+    font-weight: 600;
+}
+.three {
+    color: #FF900E;
+    font-weight:700;
+}
+.features_text h2 {
+    font-size: 45px;
+}
+.features_text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    padding: 20px 0px 25px 0px
+}
+.features_text button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF900E;
+}
+
 
 
 /* Small Device */
@@ -172,6 +227,34 @@ img {
     .hero_content img {
         border-radius: 10px;
         margin-top: 30px;
+    }
+
+    /* Features Part */
+    #main {
+        padding-top: 45px;
+    }
+    #features {
+        padding-bottom: 60px;
+    }
+    .features_content {
+        flex-direction: column-reverse;
+    }
+    .features_img {
+        width: 100%;
+        gap: 15px;
+    }
+    .features_text {
+        width: 100%;
+        text-align: center;
+    }
+    .features_text h2 {
+        font-size: 35px;
+    }
+    .features_text p {
+        padding: 17px 0px 20px 0px
+    }
+    .features_text button {
+        padding: 15px 10px;
     }
 }
 
@@ -227,5 +310,33 @@ img {
     }
     .hero_content img {
         margin-top: 30px;
+    }
+
+    /* Features Part */
+    #main {
+        padding-top: 45px;
+    }
+    #features {
+        padding-bottom: 60px;
+    }
+    .features_content {
+        flex-direction: column-reverse;
+    }
+    .features_img {
+        width: 100%;
+        gap: 15px;
+    }
+    .features_text {
+        width: 100%;
+        text-align: center;
+    }
+    .features_text h2 {
+        font-size: 35px;
+    }
+    .features_text p {
+        padding: 17px 0px 20px 0px
+    }
+    .features_text button {
+        padding: 15px 10px;
     }
 }
